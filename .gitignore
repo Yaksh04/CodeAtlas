@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# Index data, clones and caches live outside the repo (see CODEATLAS_HOME); belt and braces:
+.codeatlas/
+
+# Eval outputs are reproducible from configs; keep the folder, not the runs
+results/*
+!results/.gitkeep
+
+# web
+node_modules/
+.next/

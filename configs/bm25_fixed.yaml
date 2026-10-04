@@ -1,0 +1,14 @@
+# Sprint 1 lexical baseline: BM25 with the identifier-aware tokenizer over fixed chunks.
+name: bm25_fixed
+repo: https://github.com/pallets/flask
+rev: 22d924701a6ae2e4cd01e9a15bbaf3946094af65   # tag 3.1.3
+chunker: fixed
+retriever:
+  type: bm25
+  params:
+    name_boost: 3
+    exact_qualified_bonus: 20.0
+    exact_symbol_bonus: 10.0
+    include_tests: true
+dataset: ../datasets/flask_seed.jsonl
+ks: [1, 5, 10]
